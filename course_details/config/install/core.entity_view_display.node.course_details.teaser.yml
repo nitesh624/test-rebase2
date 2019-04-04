@@ -1,0 +1,46 @@
+uuid: 032a7a05-3376-4ec1-ac6c-56304afa4fee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.course_details.body
+    - field.field.node.course_details.field_course_code
+    - field.field.node.course_details.field_course_title
+    - field.field.node.course_details.field_lecture_credit
+    - field.field.node.course_details.field_practical_credit
+    - field.field.node.course_details.field_total_credits
+    - field.field.node.course_details.field_tutorial_credit
+    - node.type.course_details
+  enforced:
+    module:
+      - course_details
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: H9Vz3NpTWUWqpzQDWz4IU9gFxKNgMYVHjN1t6d3hCf0
+id: node.course_details.teaser
+targetEntityType: node
+bundle: course_details
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_course_code: true
+  field_course_title: true
+  field_lecture_credit: true
+  field_practical_credit: true
+  field_total_credits: true
+  field_tutorial_credit: true
+  langcode: true

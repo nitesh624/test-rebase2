@@ -1,0 +1,18 @@
+name: 'IITB course allotment content type'
+type: module
+description: 'Course allotment content type line 1'
+core: 8.x
+package: 'IITB content type'
+dependencies:
+  - drupal:menu_ui
+  - drupal:node
+  - drupal:options
+  - drupal:link
+  - drupal:datetime
+  - drupal:text
+  - drupal:user
+  - drupal:path
+  - field_permissions:field_permissions
+  - acadmix_faculty:acadmix_faculty
+  - course_details:course_details
+  - staff_page:staff_page
